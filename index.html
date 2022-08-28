@@ -20,14 +20,28 @@
       <section>
         <h1>Список основных команд Git</h1>
         <ol>
-          <li><span>git -version</span> - показать версию git</li>
+          <li><span>git --version</span> - показать версию git</li>
+          <li>
+            <span>git init</span> - создать новый репозиторий в текущеи каталоге
+          </li>
           <li>
             <span>git -status</span> - показать статус новых документов в
             проекте
           </li>
-          <li><span>git add .</span> - добавить файлы для коммита</li>
           <li>
-            <span>git commit -m ""</span> - закомментировать изменения в проекте
+            <span>git add .</span> - добавить все новые файлы для дальнейшего
+            коммита
+          </li>
+          <li>
+            <span>git clone</span> - копирует репозиторий на локальный компьютер
+          </li>
+          <li>
+            <span>git commit -m ""</span> - добавить файлы для коммита и
+            закомментировать изменения в проекте
+          </li>
+          <li>
+            <span>git rm fileName.txt</span> - удаляет файли для коммита, где
+            fileName.txt имя удаляемого файла
           </li>
           <li>
             <span>git remote -v</span> - посмотреть где находится репозиторий
@@ -51,6 +65,9 @@
           <li>
             <span>git commit -am ""</span> - сделать коммит если не добавлялись
             новые файлы
+          </li>
+          <li>
+            <span>git log -p</span> - подробно посмотреть историю всех коммитов
           </li>
         </ol>
       </section>
