@@ -9,3 +9,9 @@ h1 {
 ol span {
   color: brown;
 }
+
+nav li {
+  list-style-type: none;
+  display: inline;
+  padding: 5px;
+}
