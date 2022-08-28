@@ -1,15 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Work</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/">Главная страница</a></li>
+          <li><a href="./gallery.html">Галерея</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Список основных команд Git</h1>
+      <ol>
+        <li><span>git -version</span> - показать версию git</li>
+        <li>
+          <span>git -status</span> - показать статус новых документов в проекте
+        </li>
+        <li><span>git add .</span> - добавить файлы для коммита</li>
+        <li>
+          <span>git commit -m ""</span> - закомментировать изменения в проекте
+        </li>
+        <li>
+          <span>git remote -v</span> - посмотреть где находится репозиторий
+        </li>
+        <li>
+          <span>git push origin main</span> - отправить изменения, где main-
+          нужная ветка или HEAD - для текущей ветки
+        </li>
+        <li>
+          <span>git branch</span> - посмотреть сколько всего веток и какая
+          текущая
+        </li>
+        <li>
+          <span>git checkout myBranch</span> - переключиться на ветку, где
+          myBranch - имя нужной ветки
+        </li>
+        <li>
+          <span>git checkout -b nameNewBranch</span> - переключиться и создать
+          новую ветку с именем nameNewBranch
+        </li>
+      </ol>
+    </main>
   </body>
 </html>
