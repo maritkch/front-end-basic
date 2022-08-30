@@ -2,3 +2,50 @@
   margin: 0;
   padding: 0;
 }
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+h2 {
+  margin: 15px 0;
+}
+li,
+div > p {
+  margin-left: 40px;
+}
+li + li {
+  margin-top: 10px;
+}
+ul span {
+  font-weight: bold;
+}
+p {
+  color: #ff0000;
+}
+#someText {
+  color: #ff8c00;
+}
+.someText {
+  color: #ffd700;
+}
+.firstText.secondText {
+  color: #32cd32;
+}
+.listItem p {
+  color: #87cefa;
+}
+[href*="google"] {
+  color: #4682b4;
+}
+.someLink {
+  color: #9400d3;
+}
+.someLink:hover {
+  color: #ff1493;
+}
+.firstLetter::first-letter {
+  color: #000000;
+  font-size: 30px;
+}
+.childItem > p {
+  color: #696969;
+}

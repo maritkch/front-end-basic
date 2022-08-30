@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Pacifico", cursive;
+  font-size: 18px;
+  line-height: 1.7;
+  font-weight: 400;
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+hr {
+  color: #303030;
+  font-weight: 700;
+}
+h1 {
+  font-size: 36px;
+  margin: 20px 0;
+}
+hr {
+  margin: 10px 0;
+}
+
+p {
+  color: #909090;
+  line-height: 1.7;
+}
+
+.studentCard {
+  width: 300px;
+  border: 0px black solid;
+  border-radius: 1rem;
+  box-shadow: 0 0 30px rgba(50, 50, 100, 0.25);
+  text-align: center;
+  padding: 1em;
+  margin: 0 auto;
+}
+
+.studentPhoto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* if image width/height has less imageBox than use this snippet */
+  /* width: 300px;
+  height: 300px;
+  object-fit: cover; */
+}
+.imageBox {
+  border-radius: 0.5em;
+  position: relative;
+  overflow: hidden;
+  width: 300px;
+  height: 300px;
+}
+
+.linkMore {
+  text-decoration: none;
+  text-align: right;
+}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,9 +9,82 @@
   </head>
   <body>
     <header>
-      <h1>Виды селекторов</h1>
+      <h1>Домашняя работа №4</h1>
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+      <section>
+        <h2>Виды селекторов</h2>
+        <ul class="firstList">
+          <li><span>*</span> - любые элементы на странице;</li>
+          <li><span>p</span> - элементы с тегом p;</li>
+          <li><span>#id</span> - элемент с данным id;</li>
+          <li><span>.class</span> - элементы определённого класса class;</li>
+          <li><span>[attr]</span> - элементы содержащие атрибут;</li>
+          <li>
+            <span>[attr="value"]</span> - элементы атрибута значение которого
+            равно value;
+          </li>
+          <li><span>:hover</span> - псевдокласс hover.</li>
+          <li><span>::first-letter</span> - псевдоэлемент first-letter.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Применение разных типов селекторов</h2>
+        <ol class="secondList">
+          <li>
+            <p>Применение стилей по названию элементов (по тегу p)</p>
+          </li>
+          <li>
+            <p id="someText">Применение стилей по id</p>
+          </li>
+          <li>
+            <p class="someText">Применение стилей по классу</p>
+          </li>
+          <li>
+            <p class="firstText secondText">
+              Применение стилей по нескольким классам
+            </p>
+          </li>
+          <li class="listItem">
+            <p>Применение стилей по вложенности</p>
+          </li>
+          <li>
+            <a
+              href="https://www.google.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Применение стилей по наличию атрибута</a
+            >
+          </li>
+          <li>
+            <a href="./bonus.html" rel="noopener noreferrer" class="someLink"
+              >Применение стилей по псевдоклассу hover (при наведении на ссылку
+              поменяется цвет). Это ссылка на бонусное задание.</a
+            >
+          </li>
+          <li>
+            <p class="firstLetter">Применение стилей по псевдоэлементу</p>
+          </li>
+        </ol>
+        <div class="childItem">
+          <p>продолжение списка - это первый элемент вложенности</p>
+          <ol start="9">
+            <li>
+              <p>
+                Применение стилей по дочернему селектору - этот текс не первый
+                по вложжености, поэтому стиль применился только к тексту
+                "продолжение списка"
+              </p>
+            </li>
+            <li>
+              <p>
+                Применение стилей по соседним элементам можно посмотреть в стоке
+                15 файла css
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
