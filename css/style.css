@@ -3,7 +3,7 @@
   padding: 0;
 }
 html {
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .cardTitle {
   font-size: 18px;
@@ -29,5 +29,4 @@ html {
 
 .cardPhoto {
   margin: 0 35px;
-  
 }
