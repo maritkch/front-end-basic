@@ -2,3 +2,32 @@
   margin: 0;
   padding: 0;
 }
+html {
+  font-family: sans-serif;
+}
+.cardTitle {
+  font-size: 18px;
+  line-height: 1.22;
+  font-weight: 800;
+}
+.cardSub {
+  font-size: 14px;
+  line-height: 1.29;
+  font-weight: 400;
+}
+.container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.card {
+  background-color: #E0E0E0#;
+  width: 200px;
+  height: 226px;
+  border: 1px solid black;
+}
+
+.cardPhoto {
+  margin: 0 35px;
+  
+}
