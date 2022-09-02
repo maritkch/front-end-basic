@@ -12,6 +12,7 @@ html {
   line-height: 1.22;
   font-weight: 800;
   margin: 10px 0;
+  padding: 0 10px;
 }
 .cardSub {
   font-size: 14px;
