@@ -5,7 +5,54 @@
 }
 html {
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.7;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.17;
+  text-align: center;
+  color: #ffffff;
+}
+
+.container {
+  width: 100%;
+  max-width: 1100px;
+  background-color: #c4c4c4;
+  margin: 0 auto;
+  padding: 50px;
+}
+.block {
+  background-color: #e6e6e6;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.block + .block {
+  margin-top: 50px;
+}
+
+.square {
+  width: 200px;
+  height: 200px;
+  background-color: #fc8f8f;
+  display: inline-block;
+  /* padding: 68px 0; */
+  line-height: 200px;
+}
+
+.square.small {
+  width: 100px;
+  height: 100px;
+  font-size: 36px;
+  /* padding: 32px 0; */
+  line-height: 100px;
+}
+
+.floatLeft {
+  float: left;
+}
+.floatRight {
+  float: right;
+}
+.clearfix {
+  display: block;
+  clear: both;
 }
