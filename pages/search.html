@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Work</title>
+    <link rel="stylesheet" href="../fonts/font.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="containerHeader">
+        <nav>
+          <ul class="navigation">
+            <li><a href="../index.html" class="button">Home</a></li>
+            <li>
+              <a href="./registration.html" class="button">Registration</a>
+            </li>
+            <li>
+              <a href="./authorization.html" class="button">Authorization</a>
+            </li>
+            <li><a href="./search.html" class="button current">Search</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <section class="carSearch">
+          <h1>Search Used Car</h1>
+          <form action="https://fom.in.ua/echo" method="post">
+            <label class="searchItem">
+              <span>Body type: </span>
+              <select name="bodyType" class="listOption">
+                <option value="none" disabled selected>Select body type</option>
+                <option value="all">All</option>
+                <option value="cabriolet">Cabriolet</option>
+                <option value="hatchback">Hatchback</option>
+                <option value="limousine">Limousine</option>
+                <option value="minivan">Minivan</option>
+                <option value="sedan">Sedan</option>
+              </select>
+            </label>
+            <label class="searchItem">
+              <span>Make: </span>
+              <select name="make" class="listOption">
+                <option value="none" disabled selected>
+                  Select make of car
+                </option>
+                <option value="all">All</option>
+                <option value="audi">Audi</option>
+                <option value="bmw">BMW</option>
+                <option value="dodge">Dodge</option>
+                <option value="ford">Ford</option>
+                <option value="jaguar">Jaguar</option>
+                <option value="suzuki">Suzuki</option>
+              </select>
+            </label>
+            <label class="searchItem">
+              <span>Country: </span>
+              <select name="country" class="listOption">
+                <option value="none" disabled selected>Select country</option>
+                <option value="all">All</option>
+                <option value="germany">Germany</option>
+                <option value="japan">Japan</option>
+                <option value="uk">UK</option>
+                <option value="usa">USA</option>
+              </select>
+            </label>
+            <div class="price searchItem">
+              <span>Price </span>
+              <label>
+                <span>from: </span>
+                <input type="number" name="priceFrom" min="0" />
+              </label>
+              <label>
+                <span>to: </span>
+                <input type="number" name="priceTo" min="0" />
+              </label>
+              <label class="searchItem">
+                <select name="currency" id="currency" class="specialList">
+                  <option value="dollar">&#36;</option>
+                  <option value="hryvnia">&#8372;</option>
+                  <option value="dollar">&#8364;</option>
+                </select>
+              </label>
+            </div>
+            <div class="year searchItem">
+              <span>Year </span>
+              <label>
+                <span>from: </span>
+                <select name="year" class="specialList">
+                  <option value="1990">1990</option>
+                  <option value="1991">1991</option>
+                  <option value="1992">1992</option>
+                  <option value="1993">1993</option>
+                  <option value="1994">1994</option>
+                  <option value="1995">1995</option>
+                  <option value="1996">1996</option>
+                  <option value="1997">1997</option>
+                  <option value="1998">1998</option>
+                  <option value="1999">1999</option>
+                  <option value="2000">2000</option>
+                  <option value="2001">2001</option>
+                  <option value="2002">2002</option>
+                  <option value="2003">2003</option>
+                  <option value="2004">2004</option>
+                  <option value="2005">2005</option>
+                  <option value="2006">2006</option>
+                  <option value="2007">2007</option>
+                  <option value="2008">2008</option>
+                  <option value="2009">2009</option>
+                  <option value="2010">2010</option>
+                  <option value="2011">2011</option>
+                  <option value="2012">2012</option>
+                  <option value="2013">2013</option>
+                  <option value="2014">2014</option>
+                  <option value="2015">2015</option>
+                  <option value="2016">2016</option>
+                  <option value="2017">2017</option>
+                  <option value="2018">2018</option>
+                  <option value="2019">2019</option>
+                  <option value="2020">2020</option>
+                  <option value="2021">2021</option>
+                  <option value="2022">2022</option>
+                </select>
+              </label>
+              <label>
+                <span>to: </span>
+                <select name="year" class="specialList">
+                  <option value="1990">1990</option>
+                  <option value="1991">1991</option>
+                  <option value="1992">1992</option>
+                  <option value="1993">1993</option>
+                  <option value="1994">1994</option>
+                  <option value="1995">1995</option>
+                  <option value="1996">1996</option>
+                  <option value="1997">1997</option>
+                  <option value="1998">1998</option>
+                  <option value="1999">1999</option>
+                  <option value="2000">2000</option>
+                  <option value="2001">2001</option>
+                  <option value="2002">2002</option>
+                  <option value="2003">2003</option>
+                  <option value="2004">2004</option>
+                  <option value="2005">2005</option>
+                  <option value="2006">2006</option>
+                  <option value="2007">2007</option>
+                  <option value="2008">2008</option>
+                  <option value="2009">2009</option>
+                  <option value="2010">2010</option>
+                  <option value="2011">2011</option>
+                  <option value="2012">2012</option>
+                  <option value="2013">2013</option>
+                  <option value="2014">2014</option>
+                  <option value="2015">2015</option>
+                  <option value="2016">2016</option>
+                  <option value="2017">2017</option>
+                  <option value="2018">2018</option>
+                  <option value="2019">2019</option>
+                  <option value="2020">2020</option>
+                  <option value="2021">2021</option>
+                  <option value="2022">2022</option>
+                </select>
+              </label>
+            </div>
+            <div class="searchItem">
+              <fieldset class="searchSet">
+                <legend>Damage Type:</legend>
+                <label>
+                  <input type="checkbox" name="damageType" value="normalWear" />
+                  <span>Normal Wear</span>
+                </label>
+                <label>
+                  <input type="checkbox" name="damageType" value="minorDent" />
+                  <span>Minor dent</span>
+                </label>
+                <label>
+                  <input type="checkbox" name="damageType" value="highDamage" />
+                  <span>High damage</span>
+                </label>
+                <label>
+                  <input type="checkbox" name="damageType" value="onCredit" />
+                  <span>On Credit</span>
+                </label>
+                <label>
+                  <input
+                    type="checkbox"
+                    name="damageType"
+                    value="unregistered"
+                  />
+                  <span>Unregistered</span>
+                </label>
+              </fieldset>
+            </div>
+            <div class="searchItem">
+              <span>Type of fuel: </span>
+              <div class="checkboxList">
+                <label>
+                  <input type="radio" name="typeOfFuel" value="gas" />
+                  <span>Gas</span>
+                </label>
+                <label>
+                  <input type="radio" name="typeOfFuel" value="diesel" />
+                  <span>Diesel</span>
+                </label>
+                <label>
+                  <input type="radio" name="typeOfFuel" value="electric" />
+                  <span>Electric</span>
+                </label>
+              </div>
+            </div>
+            <div class="searchItem">
+              <span>Transmission type: </span>
+              <div class="checkboxList">
+                <label>
+                  <input type="radio" name="transmissionType" value="manual" />
+                  <span>Manual</span>
+                </label>
+                <label>
+                  <input
+                    type="radio"
+                    name="transmissionType"
+                    value="automatic"
+                  />
+                  <span>Automatic</span>
+                </label>
+              </div>
+            </div>
+            <label class="searchItem">
+              <span>Color: </span>
+              <input type="color" name="color" />
+            </label>
+            <div class="searchItem">
+              <fieldset class="searchSet">
+                <legend>Comfort options:</legend>
+                <div class="leftSide">
+                  <label>
+                    <input
+                      type="checkbox"
+                      name="comfortOptions"
+                      value="adaptiveCruise"
+                    />
+                    <span>Adaptive cruise</span>
+                  </label>
+                  <label>
+                    <input
+                      type="checkbox"
+                      name="comfortOptions"
+                      value="coolingGloveCompartment"
+                    />
+                    <span>Cooling glove compartment</span>
+                  </label>
+                  <label>
+                    <input
+                      type="checkbox"
+                      name="comfortOptions"
+                      value="doorCloser"
+                    />
+                    <span>Door closer</span>
+                  </label>
+                  <label>
+                    <input
+                      type="checkbox"
+                      name="comfortOptions"
+                      value="handsFreeOpening"
+                    />
+                    <span>Hands-free trunk opening</span>
+                  </label>
+                </div>
+                <div class="rightSide">
+                  <label>
+                    <input
+                      type="checkbox"
+                      name="comfortOptions"
+                      value="wheelHeating"
+                    />
+                    <span>Wheel heating</span>
+                  </label>
+                  <label>
+                    <input
+                      type="checkbox"
+                      name="comfortOptions"
+                      value="keylessEntrySystem"
+                    />
+                    <span>Keyless entry system</span>
+                  </label>
+                  <label>
+                    <input
+                      type="checkbox"
+                      name="comfortOptions"
+                      value="mirrorHeating"
+                    />
+                    <span>Mirror heating</span>
+                  </label>
+                  <label>
+                    <input
+                      type="checkbox"
+                      name="comfortOptions"
+                      value="remoteEngineStart"
+                    />
+                    <span>Remote engine start</span>
+                  </label>
+                </div>
+              </fieldset>
+            </div>
+            <button class="searchItem submitButton button" type="submit">
+              <span>Find</span>
+            </button>
+          </form>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="footerWrap">
+        <span>Thank you for trusting our service</span>
+      </div>
+    </footer>
+  </body>
+</html>

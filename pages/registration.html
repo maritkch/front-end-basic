@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Work</title>
+    <link rel="stylesheet" href="../fonts/font.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="containerHeader">
+        <nav>
+          <ul class="navigation">
+            <li><a href="../index.html" class="button">Home</a></li>
+            <li>
+              <a href="./registration.html" class="button current"
+                >Registration</a
+              >
+            </li>
+            <li>
+              <a href="./authorization.html" class="button">Authorization</a>
+            </li>
+            <li><a href="./search.html" class="button">Search</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="boxForm">
+          <h1 class="regTitle">Registration</h1>
+          <form action="https://fom.in.ua/echo" method="post">
+            <div>
+              <label for="email">Email:</label>
+              <input id="email" type="email" name="Email" required />
+              <label for="pass">Password:</label>
+              <input id="pass" type="password" name="Password" required />
+              <label for="confirmationPass">Password confirmation:</label>
+              <input
+                id="confirmationPass"
+                type="password"
+                name="confirmation Password"
+                required
+              />
+              <label for="dateOfBirth">Date of Birth</label>
+              <input type="date" id="dateOfBirth" name="dateOfBirth" required />
+            </div>
+            <div class="wrapSubmitButton">
+              <input
+                type="submit"
+                class="button submitButton"
+                value="Registration"
+                name="Submit"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>
