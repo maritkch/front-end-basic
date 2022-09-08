@@ -5,7 +5,36 @@
 }
 html {
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 400;
   line-height: 1.7;
+  text-transform: uppercase;
+  padding: 5rem;
+}
+
+th,
+td {
+  padding: 0.25rem;
+}
+table {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.firstTableWrap, .january, .february, .march, .april {
+  border: 1px solid #cecece;
+}
+
+.colWeek {
+  background-color: #ffe62c;
+}
+
+.march {
+  vertical-align: top;
 }
