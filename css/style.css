@@ -27,7 +27,11 @@ table {
   margin: 0 auto;
 }
 
-.firstTableWrap, .january, .february, .march, .april {
+.firstTableWrap,
+.january,
+.february,
+.march,
+.april {
   border: 1px solid #cecece;
 }
 
@@ -35,6 +39,9 @@ table {
   background-color: #ffe62c;
 }
 
-.march {
+.january,
+.february,
+.march,
+.april {
   vertical-align: top;
 }
