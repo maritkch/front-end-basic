@@ -1,16 +1,157 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Work</title>
-    <link rel="stylesheet" href="./fonts/font.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./fonts/font.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header>
+      <div class="bgHeader">
+        <div class="container">
+          <nav>
+            <ul class="navList">
+              <li class="navListItem"><a href="#">ГЛАВНАЯ</a></li>
+              <li class="navListItem"><a href="#">ОБ АВТОРЕ</a></li>
+              <li class="navListItem"><a href="#">РАБОТЫ</a></li>
+              <li class="navListItem"><a href="#">ПРОЦЕСС</a></li>
+              <li class="navListItem"><a href="#">КОНТАКТЫ</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="bgHero heroIndent">
+        <div class="container">
+          <h1 class="heroTitle">Дизайн и верстка</h1>
+          <p class="heroDescription">
+            Lorem Ipsum &#8209; это текст&#8209;"рыба", часто используемый в
+            печати и вэб&#8209;дизайне. Lorem Ipsum является стандартной "рыбой"
+            для текстов на латинице с начала XVI века.
+          </p>
+          <button
+            onclick="location.href='mailto:marihoult@gmail.com';"
+            class="button"
+          >
+            НАПИСАТЬ МНЕ
+          </button>
+        </div>
+      </section>
+      <section class="bgAboutMe aboutMeIndent">
+        <div class="container">
+          <h2 class="title">Обо мне</h2>
+          <p class="description">
+            Lorem Ipsum &#8209; это текст&#8209;"рыба", часто используемый в
+            печати и вэб&#8209;дизайне. Lorem Ipsum является стандартной "рыбой"
+            для текстов на латинице с начала XVI века.
+          </p>
+        </div>
+      </section>
+      <section class="bgProject projectIndent">
+        <h2 class="hiddenTitle">Проекты</h2>
+        <div class="container">
+          <div class="projectItem">
+            <img
+              src="./images/project_item.png"
+              class="projectLogo"
+              alt="логотип проекта"
+            />
+            <div class="projectTextWrap">
+              <span class="numberProject">40&plus;</span>
+              <span class="projectText">проектов</span>
+            </div>
+          </div>
+          <div class="projectItem">
+            <img
+              src="./images/project_item.png"
+              class="projectLogo"
+              alt="логотип проекта"
+            />
+            <div class="projectTextWrap">
+              <span class="numberProject">40&plus;</span>
+              <span class="projectText">проектов</span>
+            </div>
+          </div>
+          <div class="projectItem">
+            <img
+              src="./images/project_item.png"
+              class="projectLogo"
+              alt="логотип проекта"
+            />
+            <div class="projectTextWrap">
+              <span class="numberProject">40&plus;</span>
+              <span class="projectText">проектов</span>
+            </div>
+          </div>
+          <div class="projectItem">
+            <img
+              src="./images/project_item.png"
+              class="projectLogo"
+              alt="логотип проекта"
+            />
+            <div class="projectTextWrap">
+              <span class="numberProject">40&plus;</span>
+              <span class="projectText">проектов</span>
+            </div>
+          </div>
+          <div class="projectItem">
+            <img
+              src="./images/project_item.png"
+              class="projectLogo"
+              alt="логотип проекта"
+            />
+            <div class="projectTextWrap">
+              <span class="numberProject">40&plus;</span>
+              <span class="projectText">проектов</span>
+            </div>
+          </div>
+          <div class="projectItem">
+            <img
+              src="./images/project_item.png"
+              class="projectLogo"
+              alt="логотип проекта"
+            />
+            <div class="projectTextWrap">
+              <span class="numberProject">40&plus;</span>
+              <span class="projectText">проектов</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bgWork workIdent">
+        <div class="container">
+          <h2 class="title">Как я работаю</h2>
+          <p class="description">
+            Lorem Ipsum &#8209; это текст&#8209;"рыба", часто используемый в
+            печати и вэб&#8209;дизайне. Lorem Ipsum является стандартной "рыбой"
+            для текстов на латинице с начала XVI века.
+          </p>
+          <div class="videoWrap">
+            <iframe
+              src="https://www.youtube.com/embed/R8lHaEZYpCU?controls=0"
+              title="бегущая строка кода"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footerWrap">
+        <div class="container">
+          <div class="footerText">
+            <span class="footerTitle">Иванов Иван</span>
+            <span class="footerDescription"
+              >&copy; 2018. Все права защищены.</span
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
