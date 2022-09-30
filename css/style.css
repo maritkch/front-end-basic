@@ -278,7 +278,7 @@ a {
 /* PRODUCTS */
 
 .products {
-  padding: 90px 0;
+  padding: 90px 0 45px 0;
   text-align: center;
 }
 
@@ -322,10 +322,9 @@ a {
 
 /* FEATURE */
 
-/* .feature .fontTitle,
-.feature .description {
-  max-width: 460px;
-} */
+.feature {
+  padding: 45px 0 100px 0;
+}
 
 .feature .textBox {
   flex-grow: 1;
@@ -343,7 +342,7 @@ a {
 /* PARTNERS */
 .partners {
   flex-direction: column;
-  padding: 205px 0;
+  padding: 105px 0 205px 0;
   gap: 66px;
 }
 
