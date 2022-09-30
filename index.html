@@ -4,13 +4,362 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home Work</title>
-    <link rel="stylesheet" href="./fonts/font.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <title>Skinn</title>
+    <link rel="stylesheet" href="./fonts/font.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header>
+      <div class="bg">
+        <div class="container">
+          <div class="headerMenu flex justifyBetween itemsCenter">
+            <div class="logo">
+              <a href="/index.html">
+                <img src="./images/logo.png" alt="logo"
+              /></a>
+            </div>
+            <div class="nav">
+              <nav>
+                <ul class="flex gap40">
+                  <li><a href="#shopAll">Shop All</a></li>
+                  <li><a href="#">Our Story</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Pages</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="cart flex">
+              <a href="#">Cart</a>
+              <div class="cartNumber">
+                <span>0</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="bg">
+        <div class="container">
+          <section class="hero flex itemsCenter">
+            <div class="containerHero">
+              <div class="heroContent">
+                <h1 class="fontTitle heroTitle">
+                  Discover The <span>Beauty Within</span>
+                </h1>
+                <div class="wrapHero flex justifyBetween itemsCenter">
+                  <button class="button">View collection</button>
+                  <span class="fontAccent">You</span>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="shopAll" class="shopAll flex justifyCenter">
+            <div class="content">
+              <h2 class="sectionTitle fontTitle">
+                Natural and <span>certified organic</span>
+              </h2>
+              <span class="fontAccent">Skincare</span>
+              <p class="description">
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                blanditiis praesentium voluptatum deleniti atque corrupti quos
+                dolores et quas molestias excepturi.
+              </p>
+              <button class="button radius">Shop all</button>
+            </div>
+            <div class="bgGallery">
+              <img
+                src="./images/image_1.jpg"
+                class="imgOne"
+                alt="hands smeared with cream"
+              />
+              <img
+                src="./images/image_2.jpg"
+                class="imgTwo"
+                alt="two girls faces"
+              />
+              <img src="./images/image_3.jpg" class="imgThree" alt="gua sha" />
+              <img
+                src="./images/image_4.jpg"
+                class="imgFour"
+                alt="the boy put a mask on his face"
+              />
+              <img
+                src="./images/image_5.jpg"
+                class="imgFive"
+                alt="face serum"
+              />
+            </div>
+          </section>
+          <div class="banner"></div>
+          <section class="products">
+            <span class="fontAccent">Products</span>
+            <h2 class="fontTitle">Healthy skin, wildly you</h2>
+            <div class="wrapper flex justifyBetween">
+              <div class="card">
+                <div class="imageWrap">
+                  <img src="./images/product_1.jpg" alt="product" />
+                </div>
+                <div class="content">
+                  <div class="productTitle flex justifyBetween">
+                    <span class="productName">Cleanser</span>
+                    <span class="productPrice"
+                      ><span>&#36;</span> 56.00 USD</span
+                    >
+                  </div>
+                  <div class="productDescription">
+                    <span>Anti Acne Face Wash</span>
+                  </div>
+                </div>
+                <button class="button lightRadius">Shop now</button>
+              </div>
+              <div class="card">
+                <div class="imageWrap">
+                  <img src="./images/product_2.jpg" alt="product" />
+                </div>
+                <div class="content">
+                  <div class="productTitle flex justifyBetween">
+                    <span class="productName">Cleanser</span>
+                    <span class="productPrice"
+                      ><span>&#36;</span> 56.00 USD</span
+                    >
+                  </div>
+                  <div class="productDescription">
+                    <span>Anti Acne Face Wash</span>
+                  </div>
+                </div>
+                <button class="button lightRadius">Shop now</button>
+              </div>
+              <div class="card">
+                <div class="imageWrap">
+                  <img src="./images/product_3.jpg" alt="product" />
+                </div>
+                <div class="content">
+                  <div class="productTitle flex justifyBetween">
+                    <span class="productName">Cleanser</span>
+                    <span class="productPrice"
+                      ><span>&#36;</span> 56.00 USD</span
+                    >
+                  </div>
+                  <div class="productDescription">
+                    <span>Anti Acne Face Wash</span>
+                  </div>
+                </div>
+                <button class="button lightRadius">Shop now</button>
+              </div>
+              <div class="card">
+                <div class="imageWrap">
+                  <img src="./images/product_4.jpg" alt="product" />
+                </div>
+                <div class="content">
+                  <div class="productTitle flex justifyBetween">
+                    <span class="productName">Cleanser</span>
+                    <span class="productPrice"
+                      ><span>&#36;</span> 56.00 USD</span
+                    >
+                  </div>
+                  <div class="productDescription">
+                    <span>Anti Acne Face Wash</span>
+                  </div>
+                </div>
+                <button class="button lightRadius">Shop now</button>
+              </div>
+            </div>
+          </section>
+          <section class="feature flex justifyBetween rowReverse">
+            <div class="textBox">
+              <span class="fontAccent">Feature</span>
+              <h2 class="fontTitle">Innovation-led Products</h2>
+              <p class="description">
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                blanditiis praesentium voluptatum deleniti atque corrupti quos
+                dolores et quas molestias excepturi.
+              </p>
+              <button class="button">Read more</button>
+            </div>
+            <div class="imgBox">
+              <img src="./images/image_6.jpg" alt="face serum" />
+            </div>
+          </section>
+          <section class="partners flex">
+            <h2 class="hidden">Our partners</h2>
+            <p class="description">
+              "Generate Lorem Ipsum which looks reasonable. The generated Lorem
+              Ipsum is therefore always free from repetition, injected humour,
+              or non-characteristic"
+            </p>
+            <div class="wrapPartners flex justifyCenter">
+              <img src="./images/partner_1.png" alt="logo partner 1" />
+              <img src="./images/partner_2.png" alt="logo partner 2" />
+              <img src="./images/partner_3.png" alt="logo partner 3" />
+              <img src="./images/partner_4.png" alt="logo partner 4" />
+            </div>
+          </section>
+          <section class="gallery flex justifyCenter">
+            <h2 class="hidden">Classes of products</h2>
+            <div class="bannerItem1">
+              <img src="./images/banner_item_1.jpg" alt="girl" />
+              <div class="border flex itemsCenter">
+                <span>Body Wash</span>
+              </div>
+            </div>
+            <div class="bannerItem2">
+              <img src="./images/banner_item_2.jpg" alt="girl" />
+              <div class="border flex itemsCenter">
+                <span>Face Wash</span>
+              </div>
+            </div>
+            <div class="bannerItem3">
+              <img src="./images/banner_item_3.jpg" alt="girl" />
+              <div class="border flex itemsCenter">
+                <span>Cleanser</span>
+              </div>
+            </div>
+          </section>
+          <section class="blog">
+            <h2 class="fontTitle">Skinn blog</h2>
+            <div class="articles flex">
+              <article class="articleItem flex justifyBetween itemsCenter">
+                <div class="content flex justifyBetween">
+                  <h3 class="articleTitle fontTitle">
+                    Which skinceuticals vitamin c serum is right for you
+                  </h3>
+                  <button class="button radius">Read more</button>
+                </div>
+                <img
+                  src="./images/article_image_1.jpg"
+                  class="articleImg"
+                  alt="article image"
+                />
+              </article>
+              <article class="articleItem flex justifyBetween itemsCenter">
+                <div class="content flex justifyBetween">
+                  <h3 class="articleTitle fontTitle">
+                    Everything you need to know about your skin
+                  </h3>
+                  <button class="button radius">Read more</button>
+                </div>
+                <img
+                  src="./images/article_image_2.jpg"
+                  class="articleImg"
+                  alt="article image"
+                />
+              </article>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="bg">
+        <div class="container">
+          <div class="footerBg">
+            <div class="content flex justifyBetween">
+              <div class="logoItem">
+                <div class="logo">
+                  <a href="/index.html"
+                    ><img src="./images/logo.png" alt="logo"
+                  /></a>
+                </div>
+                <p class="description">
+                  The wise man therefore always holds in these matters to this
+                  principle
+                </p>
+                <p>
+                  Designed by
+                  <span><a href="#" class="footerLink">Webestica</a></span>
+                </p>
+                <p>
+                  Powered by
+                  <span><a href="#" class="footerLink">Webflow</a></span>
+                </p>
+              </div>
+              <div class="pagesItem">
+                <h4 class="footerTitle fontTitle">Pages</h4>
+                <div class="pagesLink flex">
+                  <div class="leftSide">
+                    <ul>
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">Home 2</a></li>
+                      <li><a href="#">Shop All</a></li>
+                      <li><a href="#">Our Story</a></li>
+                      <li><a href="#">Blog</a></li>
+                      <li><a href="#">FAQs</a></li>
+                    </ul>
+                  </div>
+                  <div class="rightSide">
+                    <ul>
+                      <li><a href="#">Contact Us</a></li>
+                      <li><a href="#">Instructions</a></li>
+                      <li><a href="#">Style Guide</a></li>
+                      <li><a href="#">Licenses</a></li>
+                      <li><a href="#">Changelog</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="contactItem">
+                <h4 class="footerTitle fontTitle">Contact us</h4>
+                <div class="footerContact flex justifyBetween">
+                  <div class="mailItem">
+                    <p>Have questions or suggestions?</p>
+                    <a href="mailto:hello@webestica.com" class="footerLink"
+                      >hello@webestica.com</a
+                    >
+                  </div>
+                  <div class="telItem">
+                    <p>Need assistance? Give us a call.</p>
+                    <a href="tel:+015982694756" class="footerLink"
+                      >+01 598 269 4756</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="workItem">
+                <h4 class="footerTitle fontTitle">We&apos;re here for you</h4>
+                <div class="footerSocial flex justifyBetween">
+                  <div class="timeItem">
+                    <p>Monday - Thursday: 9:30 - 18:00</p>
+                    <p>Friday: 9:30 - 15:00</p>
+                  </div>
+                  <div class="socialItem">
+                    <ul class="socialList flex justifyBetween gap40">
+                      <li>
+                        <a href="#" target="_blank" rel="noopener noreferrer"
+                          ><img
+                            src="./images/facebook_logo.svg"
+                            alt="facebook logo"
+                        /></a>
+                      </li>
+                      <li>
+                        <a href="#" target="_blank" rel="noopener noreferrer"
+                          ><img
+                            src="./images/instagram_logo.svg"
+                            alt="instagram logo"
+                        /></a>
+                      </li>
+                      <li>
+                        <a href="#" target="_blank" rel="noopener noreferrer"
+                          ><img
+                            src="./images/pinterest_logo.svg"
+                            alt="pinterest logo"
+                        /></a>
+                      </li>
+                      <li>
+                        <a href="#" target="_blank" rel="noopener noreferrer"
+                          ><img
+                            src="./images/twitter_logo.svg"
+                            alt="twitter logo"
+                        /></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
