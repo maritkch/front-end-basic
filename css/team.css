@@ -1,0 +1,161 @@
+:root {
+  --violetMainColor: #323264;
+  --violetAltColor: #46466e;
+  --violetSoftColor: #686887;
+
+  --pinkAccentColor: #f0145a;
+
+  --blueMainColor: #24a3ff;
+  --blueHoverColor: #0085ff;
+  --blueActiveColor: #006ccf;
+
+  --greyBgColor: #f5f5fa;
+  --greyBgAltColor: #ededf7;
+  --greyTextColor: #b3b3ba;
+  --greySeparatorColor: #e6e6f0;
+
+  --blackTextColor: #000000;
+  --whiteTextColor: #ffffff;
+}
+
+.inner {
+  width: 100%;
+  max-width: 335px;
+  padding: 30px 10px;
+  margin: 0 auto;
+}
+
+.teamMainTitle {
+  font-size: 30px;
+  line-height: 1.23;
+  background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.cardTitle {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.57;
+  color: var(--violetMainColor);
+}
+.cardDescription {
+  font-size: 14px;
+  line-height: 1.25;
+  color: var(--greyTextColor);
+}
+.cardTeamWrap {
+  padding-bottom: 60px;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  row-gap: 30px;
+}
+.cardTeam {
+  /* overflow: hidden; */
+  /* border-radius: 12px; */
+  display: grid;
+  grid-template-columns: 90% 10%;
+  grid-template-rows: repeat(3, auto);
+  /* border: 1px solid; */
+  /* row-gap: 5px; */
+  position: relative;
+}
+
+.teamLink {
+  height: 100%;
+  width: 100%;
+  /* border: 1px solid; */
+  /* opacity: 0; */
+  position: absolute;
+  z-index: 0;
+}
+
+.teamLink:hover ~ .arrow path {
+  stroke: var(--pinkAccentColor);
+}
+
+.teamLink:hover ~ .cardTitle {
+  color: var(--pinkAccentColor);
+}
+
+.cardTeam .teamImg {
+  grid-column: 1/3;
+  justify-self: center;
+
+  display: block;
+  max-width: 100%;
+  min-height: 300px;
+  /* aspect-ratio: 1/1; */
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.cardTeam .arrow {
+  grid-row: 2/4;
+  grid-column: 2/3;
+  justify-self: end;
+
+  position: relative;
+
+  width: 32px;
+  height: 32px;
+  background: var(--greyBgColor);
+  border-radius: 50%;
+}
+.arrow svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (min-width: 768px) {
+  .inner {
+    max-width: 688px;
+    padding: 60px 0px;
+    margin: 0 auto;
+  }
+  .teamMainTitle {
+    font-size: 38px;
+    line-height: 1.21;
+    text-align: start;
+  }
+  .cardTeamWrap {
+    /* padding: 60px 0; */
+
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    gap: 60px;
+  }
+
+  .cardTeam .teamImg {
+    min-height: 400px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .inner {
+    max-width: 684px;
+  }
+  .cardTeamWrap {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .cardTeam .teamImg {
+    min-height: 400px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .inner {
+    max-width: 1080px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .inner {
+    max-width: 1360px;
+  }
+}
