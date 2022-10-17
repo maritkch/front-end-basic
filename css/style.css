@@ -195,11 +195,11 @@ header .facebookLink {
   z-index: 3;
 }
 
-.headerNav input {
+/* .headerNav input {
   display: none;
   opacity: 0;
   position: absolute;
-}
+} */
 
 .headerNav a {
   border-radius: 12px;
