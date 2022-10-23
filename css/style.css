@@ -48,7 +48,7 @@ ul li {
 
 .container {
   width: 100%;
-  max-width: 375px;
+  /* max-width: 375px; */
   padding: 0px 30px;
   margin: 0 auto;
 }
@@ -327,8 +327,8 @@ footer .mail:hover {
 
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 688px;
-    padding: 0 20px;
+    /* max-width: 688px; */
+    padding: 0 60px;
   }
   .gridHeader {
     grid-template-rows: repeat(3, auto);
@@ -487,7 +487,7 @@ footer .mail:hover {
 
 @media screen and (min-width: 1024px) {
   .container {
-    max-width: 944px;
+    /* max-width: 944px; */
   }
   .gridHeader {
     grid-template-rows: repeat(1, auto);

@@ -48,7 +48,7 @@
   padding-bottom: 60px;
 
   display: grid;
-  grid-template-columns: 1fr;
+  /* grid-template-columns: 1fr; */
   justify-content: center;
   row-gap: 30px;
 }
@@ -112,7 +112,7 @@
   transform: translate(-50%, -50%);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 500px) {
   .inner {
     max-width: 688px;
     padding: 60px 0px;
@@ -138,7 +138,8 @@
 
 @media screen and (min-width: 1024px) {
   .inner {
-    max-width: 684px;
+    /* max-width: 684px; */
+    max-width: calc(100% - 17%);
   }
   .cardTeamWrap {
     grid-template-columns: repeat(3, 1fr);
