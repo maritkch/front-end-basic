@@ -1,0 +1,161 @@
+:root {
+  --violetMainColor: #323264;
+  --violetAltColor: #46466e;
+  --violetSoftColor: #686887;
+
+  --pinkAccentColor: #f0145a;
+
+  --blueMainColor: #24a3ff;
+  --blueHoverColor: #0085ff;
+  --blueActiveColor: #006ccf;
+
+  --greyBgColor: #f5f5fa;
+  --greyBgAltColor: #ededf7;
+  --greyTextColor: #b3b3ba;
+  --greySeparatorColor: #e6e6f0;
+
+  --blackTextColor: #000000;
+  --whiteTextColor: #ffffff;
+}
+
+.contactAllContent {
+  flex-direction: column;
+  /* padding-bottom: 30px; */
+}
+.contactMainContent {
+  margin: 30px 0;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 21px;
+  line-height: 1.4;
+}
+
+.contactMainContent a {
+  width: fit-content;
+}
+.mailMainContent,
+.facebookContent {
+  color: var(--blueMainColor);
+}
+.facebookContent {
+  margin-top: 5px;
+}
+.facebookContent a {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+.facebookContent span {
+  max-width: 100px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+.facebookContent path {
+  fill: var(--blueMainColor);
+}
+.facebookContent svg {
+  width: 38px;
+  height: 38px;
+}
+
+.lineSeparator {
+  border-bottom: 4px solid var(--greySeparatorColor);
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.helpForm {
+  background: var(--greyBgColor);
+  border-radius: 12px;
+  padding: 30px;
+
+  flex-direction: column;
+  gap: 15px;
+}
+
+.helpForm input,
+.helpForm textarea {
+  padding: 15px;
+  border-radius: 8px;
+  border: 0 solid;
+  font-size: 16px;
+  line-height: 1.6;
+  width: 100%;
+  font-family: inherit;
+}
+.helpForm input:focus,
+.helpForm input:focus-visible {
+  outline: 1px solid var(--blueMainColor);
+}
+.helpForm input::placeholder,
+.helpForm textarea::placeholder {
+  color: var(--greyTextColor);
+}
+
+.helpForm h1 {
+  margin-bottom: 15px;
+}
+.helpForm span,
+.button {
+  margin-top: 15px;
+}
+
+.helpForm textarea {
+  height: 130px;
+  resize: none;
+}
+
+/* --------------- MEDIA --------------- */
+
+@media screen and (min-width: 768px) {
+  .container.slim {
+    max-width: 648px;
+    padding: 60px 0;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .container.slim {
+    max-width: 904px;
+  }
+  .contactAllContent {
+    flex-direction: row;
+    gap: 60px;
+    justify-content: center;
+    /* padding-top: 60px; */
+  }
+  .contactMainContent,
+  .helpFormWrapper {
+    /* min-width: 422px; */
+    min-width: calc(50% - 60px);
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .container.slim {
+    max-width: 1080px;
+  }
+
+  .contactMainContent,
+  .helpFormWrapper {
+    /* min-width: 510px; */
+    min-width: calc(50% - 60px);
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .container.slim {
+    max-width: 1360px;
+  }
+  .contactAllContent {
+    gap: 100px;
+  }
+  .contactMainContent,
+  .helpFormWrapper {
+    /* min-width: 650px; */
+    min-width: calc(50% - 60px);
+  }
+}
