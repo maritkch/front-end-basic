@@ -37,6 +37,10 @@
 .facebookContent {
   color: var(--blueMainColor);
 }
+.mailMainContent:hover,
+.mailMainContent:focus {
+  color: var(--pinkAccentColor);
+}
 .facebookContent {
   margin-top: 5px;
 }
@@ -87,7 +91,9 @@
   font-family: inherit;
 }
 .helpForm input:focus,
-.helpForm input:focus-visible {
+.helpForm input:focus-visible,
+.helpForm textarea:focus,
+.helpForm textarea:focus-visible {
   outline: 1px solid var(--blueMainColor);
 }
 .helpForm input::placeholder,

@@ -195,7 +195,8 @@ input[type="number"] {
   opacity: 0;
 }
 
-.languages input:hover + span {
+.languages input:hover + span,
+.languages input:focus + span {
   background-color: var(--greyBgColor);
 }
 
@@ -381,7 +382,9 @@ footer .contactsWrap {
 }
 
 footer .addressLink:hover,
-footer .mail:hover {
+footer .addressLink:focus,
+footer .mail:hover,
+footer .mail:focus {
   color: var(--pinkAccentColor);
 }
 
@@ -462,7 +465,8 @@ footer .mail:hover {
     font-weight: 700;
   }
 
-  .navStyle input:hover + a {
+  .navStyle input:hover + a,
+  .navStyle input:focus + a {
     border-color: var(--blueMainColor);
     cursor: pointer;
   }
