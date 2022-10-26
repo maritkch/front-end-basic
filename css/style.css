@@ -45,12 +45,69 @@ ul li {
 .boldFont {
   font-weight: 700;
 }
-
+.uppercaseFont {
+  text-transform: uppercase;
+}
 .container {
   width: 100%;
   /* max-width: 375px; */
-  padding: 0px 30px;
+  padding: 0px 15px;
   margin: 0 auto;
+}
+.container.slim {
+  padding: 30px 30px;
+}
+.inner {
+  width: 100%;
+  max-width: 335px;
+  padding: 30px 10px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.gradientTitle {
+  font-size: 30px;
+  line-height: 1.23;
+  font-weight: 700;
+  background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.button {
+  padding: 18px;
+  color: var(--whiteTextColor);
+
+  border: 0;
+  border-radius: 12px;
+  background: var(--blueMainColor);
+  box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 700;
+}
+
+.button:hover,
+.button:focus {
+  background: var(--blueHoverColor);
+}
+
+.button:active {
+  background: var(--blueActiveColor);
+}
+
+/* delete arrow on input type=number */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
 }
 
 /* .activeLang {
@@ -167,8 +224,13 @@ header .facebookLink {
   display: inherit;
 }
 
-.facebookLink:hover path {
+.facebookLink:hover path,
+.facebookLink:focus path {
   fill: var(--pinkAccentColor);
+}
+.facebookLink:hover span,
+.facebookLink:focus span {
+  color: var(--pinkAccentColor);
 }
 
 .navWrapper {
@@ -330,6 +392,7 @@ footer .mail:hover {
     /* max-width: 688px; */
     padding: 0 60px;
   }
+
   .gridHeader {
     grid-template-rows: repeat(3, auto);
     grid-template-columns: repeat(4, auto);
@@ -422,6 +485,7 @@ footer .mail:hover {
 
   .navStyle input:checked + a {
     border-color: var(--pinkAccentColor);
+    color: var(--pinkAccentColor);
   }
   /* .navStyle input:active {
     display: none;
@@ -485,10 +549,11 @@ footer .mail:hover {
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
   .container {
     /* max-width: 944px; */
   }
+
   .gridHeader {
     grid-template-rows: repeat(1, auto);
     grid-template-columns: repeat(5, auto);
@@ -527,7 +592,7 @@ footer .mail:hover {
     grid-row: 2/3;
   }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1360px) {
   .container {
     max-width: 1360px;
   }

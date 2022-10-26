@@ -18,21 +18,6 @@
   --whiteTextColor: #ffffff;
 }
 
-.inner {
-  width: 100%;
-  max-width: 335px;
-  padding: 30px 10px;
-  margin: 0 auto;
-}
-
-.teamMainTitle {
-  font-size: 30px;
-  line-height: 1.23;
-  background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
 .cardTitle {
   font-weight: 700;
   font-size: 16px;
@@ -136,7 +121,7 @@
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
   .inner {
     /* max-width: 684px; */
     max-width: calc(100% - 17%);
