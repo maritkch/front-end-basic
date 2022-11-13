@@ -1,0 +1,256 @@
+:root {
+  --violetMainColor: #323264;
+  --violetAltColor: #46466e;
+  --violetSoftColor: #686887;
+
+  --pinkAccentColor: #f0145a;
+
+  --blueMainColor: #24a3ff;
+  --blueHoverColor: #0085ff;
+  --blueActiveColor: #006ccf;
+
+  --greyBgColor: #f5f5fa;
+  --greyBgAltColor: #ededf7;
+  --greyTextColor: #b3b3ba;
+  --greySeparatorColor: #e6e6f0;
+
+  --blackTextColor: #000000;
+  --whiteTextColor: #ffffff;
+}
+@media (min-width: 576px) {
+  .container,
+  .container-sm {
+    max-width: none;
+  }
+}
+
+/* ----------------------- 768px ----------------------- */
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 60px;
+  }
+  /* -------------- HEADER -------------- */
+
+  .gridHeader {
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(4, auto);
+    padding-top: 50px;
+  }
+  .breadCrumbs {
+    grid-row: 2/3;
+    grid-column: 1/5;
+    font-size: 36px;
+    line-height: 1.2;
+  }
+  .logoImg {
+    max-width: 130px;
+  }
+  .slash {
+    max-width: 21px;
+  }
+  .topСontent {
+    grid-column: 1/5;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 6px;
+  }
+
+  .dotSeparator {
+    display: inline;
+  }
+
+  .address {
+    display: inline;
+  }
+
+  header .facebookLink {
+    display: inline;
+  }
+
+  .navWrapper {
+    position: static;
+    grid-row: 3/4;
+    grid-column: 1/5;
+    justify-self: start;
+    padding-bottom: 0;
+    max-width: 100%;
+    /* width: 100%; */
+  }
+  .navWrapper .checkbox {
+    display: none;
+  }
+  .headerNav {
+    display: flex;
+    background-color: transparent;
+    position: inherit;
+    inset: 0;
+    z-index: 1;
+  }
+  .headerNav li:nth-child(2) {
+    margin-top: 0;
+  }
+
+  .headerNav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 15px;
+
+    margin: 0;
+    padding: 0;
+    width: auto;
+
+    position: static;
+    padding-top: 15px;
+    transform: none;
+    border-radius: 0;
+    background: transparent;
+  }
+  .headerNav li {
+    display: block;
+    border-radius: 0;
+    background-color: transparent;
+    /* max-width: 100%; */
+    padding: 7px 0;
+  }
+  .navStyle a {
+    border-radius: 0;
+    background: transparent;
+    border-bottom: 2px solid transparent;
+    color: var(--blueMainColor);
+    font-weight: 700;
+    font-size: 16px;
+  }
+
+  .headerNav.bgDark a {
+    color: var(--whiteTextColor);
+  }
+  .headerNav.bgDark a:hover {
+    color: var(--pinkAccentColor);
+    border-color: var(--pinkAccentColor);
+  }
+
+  .navStyle a:hover,
+  .navStyle a:focus {
+    border-color: var(--blueMainColor);
+  }
+
+  .headerNav .checkedLink a {
+    border-color: var(--pinkAccentColor);
+    color: var(--pinkAccentColor);
+  }
+
+  .burger {
+    display: none;
+  }
+
+  /* .bgMobile {
+      background-color: transparent;
+    } */
+
+  /* -------------- FOOTER -------------- */
+
+  .bgHeaderMobile {
+    display: none;
+  }
+
+  .footerGrid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    row-gap: 10px;
+    justify-items: start;
+  }
+
+  footer .addressWrap {
+    grid-column: 1/4;
+  }
+
+  footer .addressLink {
+    padding: 0;
+    margin: 0;
+  }
+  footer .copyright {
+    grid-column: 1/4;
+    /* align-self: center; */
+    justify-self: center;
+  }
+
+  footer .addressWrap,
+  footer .contactsWrap {
+    /* display: flex; */
+    flex-direction: row;
+    /* align-items: center;
+      gap: 10; */
+  }
+}
+
+/* ----------------------- 992px ----------------------- */
+
+@media (min-width: 992px) {
+  /* -------------- HEADER -------------- */
+
+  .gridHeader {
+    grid-template-rows: repeat(1, auto);
+    grid-template-columns: repeat(5, auto);
+  }
+  .breadCrumbs {
+    grid-row: 1/4;
+    grid-column: 1/2;
+  }
+  .topСontent {
+    grid-column: 2/6;
+    justify-self: end;
+  }
+  .navWrapper {
+    /* grid-row: 2/3; */
+    grid-column: 2/6;
+    justify-self: end;
+  }
+  .headerNav {
+    padding-top: 0px;
+  }
+
+  /* -------------- FOOTER -------------- */
+
+  .footerGrid {
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    row-gap: 10px;
+  }
+  footer .copyright {
+    grid-column: 2/3;
+    grid-row: 1/3;
+    align-self: start;
+    justify-self: end;
+  }
+  footer .addressWrap {
+    grid-column: 1/2;
+  }
+  footer .contactsWrap {
+    grid-row: 2/3;
+  }
+}
+
+/* ----------------------- 1400px ----------------------- */
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1360px;
+  }
+}
+
+/* ----------------------- 1920px ----------------------- */
+
+@media (min-width: 1920px) {
+  .container {
+    max-width: 1640px;
+  }
+  .container.small {
+    width: 100%;
+    max-width: 1360px;
+    margin: 0 auto;
+  }
+}

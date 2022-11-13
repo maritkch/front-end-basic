@@ -7,7 +7,7 @@
     <title>Team</title>
     <link rel="stylesheet" href="../fonts/font.css" />
     <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/team.css" />
+    <link rel="stylesheet" href="../css/pages/team.css" />
   </head>
   <body>
     <header>
@@ -64,29 +64,27 @@
             </a>
           </div>
           <div class="navWrapper">
-            <input type="checkbox" class="checkbox" name="checkbox" />
+            <!-- <input type="checkbox" class="checkboxBurger" name="checkbox" /> -->
             <div class="burger">
               <span></span><span></span><span></span><span></span>
             </div>
             <nav class="headerNav navStyle">
-              <label>
-                <input type="radio" name="nav" value="about_us" />
-                <a href="#">about us</a>
-              </label>
-              <label>
-                <input type="radio" name="nav" value="services" />
-                <a href="#">services</a>
-              </label>
-              <label>
-                <input type="radio" name="nav" value="team" checked />
-                <a href="./team.html">team</a> </label
-              ><label>
-                <input type="radio" name="nav" value="publications" />
-                <a href="#">publications</a> </label
-              ><label>
-                <input type="radio" name="nav" value="contact" />
-                <a href="./contact.html">contact</a>
-              </label>
+              <ul>
+                <li>
+                  <img
+                    class="buttonClose"
+                    src="../images/buttonClose.png"
+                    alt="button close"
+                  />
+                </li>
+                <li><a href="./about_us.html">about us</a></li>
+                <li><a href="./services.html">services</a></li>
+                <li class="checkedLink">
+                  <a href="./team.html">team</a>
+                </li>
+                <li><a href="./publications.html">publications</a></li>
+                <li><a href="./contact.html">contact</a></li>
+              </ul>
             </nav>
           </div>
         </div>
@@ -299,5 +297,7 @@
         </div>
       </div>
     </footer>
+    <script src="../js/jquery-3.6.1.min.js"></script>
+    <script src="../js/script.js"></script>
   </body>
 </html>

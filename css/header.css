@@ -1,0 +1,307 @@
+:root {
+  --violetMainColor: #323264;
+  --violetAltColor: #46466e;
+  --violetSoftColor: #686887;
+
+  --pinkAccentColor: #f0145a;
+
+  --blueMainColor: #24a3ff;
+  --blueHoverColor: #0085ff;
+  --blueActiveColor: #006ccf;
+
+  --greyBgColor: #f5f5fa;
+  --greyBgAltColor: #ededf7;
+  --greyTextColor: #b3b3ba;
+  --greySeparatorColor: #e6e6f0;
+
+  --blackTextColor: #000000;
+  --whiteTextColor: #ffffff;
+
+  --bgGradient: linear-gradient(
+    228.57deg,
+    #323264 11.93%,
+    #323264 57.17%,
+    #643e72 87.46%
+  );
+}
+
+.bgWhite {
+  background-color: var(--whiteTextColor);
+}
+
+.bgHeaderMobile.bgGrey {
+  background-color: rgba(245, 245, 250, 0.2);
+  z-index: 2;
+}
+
+
+
+/* .fontColorWhite {
+  color: var(--whiteTextColor);
+} */
+
+.gridHeader {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  /* padding-top: 50px; */
+  align-items: center;
+}
+
+.topСontent {
+  grid-column: 1/3;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.breadCrumbs {
+  /* grid-row: 1/3; */
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--violetMainColor);
+
+  grid-row: 2/3;
+  padding-top: 10px;
+  align-self: start;
+  display: flex;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.logoImg {
+  /* max-width: 130px; */
+  max-width: 69px;
+}
+.slash {
+  /* max-width: 21px; */
+  max-width: 12px;
+}
+
+/* .bgMobile {
+    background-color: var(--greyBgColor);
+    grid-column: 1/3;
+  } */
+
+.bgHeaderMobile {
+  width: 100%;
+  height: 45px;
+  background-color: var(--greyBgColor);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.languages {
+  display: inline;
+}
+
+.languages span {
+  max-width: 33px;
+  width: 100%;
+  padding: 5px 7px;
+  border-radius: 8px;
+  font-size: 12px;
+}
+.languages label {
+  position: relative;
+}
+.languages input {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.languages input:hover + span,
+.languages input:focus + span {
+  background-color: var(--greyBgColor);
+}
+
+.languages input:checked + span {
+  background-color: var(--pinkAccentColor);
+  color: var(--whiteTextColor);
+}
+
+.dotSeparator {
+  display: none;
+  width: 6px;
+  height: 6px;
+  background-color: var(--greySeparatorColor);
+  border-radius: 50%;
+}
+
+.address {
+  display: none;
+}
+
+header .facebookLink {
+  display: none;
+}
+
+.facebookLink svg {
+  display: inherit;
+}
+
+.facebookLink.bgDark path {
+  fill: var(--whiteTextColor);
+}
+
+.facebookLink:hover path,
+.facebookLink:focus path {
+  fill: var(--pinkAccentColor);
+}
+.facebookLink:hover span,
+.facebookLink:focus span {
+  color: var(--pinkAccentColor);
+}
+
+.navWrapper {
+  justify-self: end;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+.headerNav {
+  display: none;
+  background-color: var(--violetAltColor);
+  position: fixed;
+  inset: 0;
+  z-index: 2;
+}
+
+.headerNav ul {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  margin: 0 auto;
+  padding: 12px;
+  width: calc(100% - 16px);
+
+  border-radius: 12px 12px 0px 0px;
+  background: #cecece;
+  text-align: center;
+  gap: 15px;
+}
+
+.headerNav a {
+  padding: 7px 0;
+  margin: 0 auto;
+  font-size: 24px;
+  color: var(--blueMainColor);
+  font-weight: 700;
+}
+/* .headerNav.bgDark a {
+  color: var(--whiteTextColor);
+}
+.headerNav.bgDark a:hover {
+  color: var(--pinkAccentColor);
+  border-color: var(--pinkAccentColor);
+} */
+
+.headerNav .checkedLink a {
+  color: var(--pinkAccentColor);
+}
+
+.headerNav li {
+  border-radius: 12px;
+  background-color: var(--greyBgColor);
+}
+.headerNav li:active {
+  background-color: var(--greySeparatorColor);
+}
+/* ---------------- BURGER ---------------- */
+/* !!!!!!!!!! */
+/* .checkboxBurger {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  opacity: 0;
+  z-index: 2;
+} */
+
+.burger {
+  width: 32px;
+  height: 32px;
+  position: relative;
+  border: 0px solid;
+}
+
+.burger span {
+  position: absolute;
+  display: inline-block;
+  width: 18px;
+  height: 2px;
+  background-color: var(--violetMainColor);
+  left: 7px;
+  transition: all 0.2s linear;
+}
+.burger.white span {
+  background-color: var(--whiteTextColor);
+}
+.burger span:first-child {
+  top: 11px;
+}
+.burger span:nth-child(2),
+.burger span:nth-child(3) {
+  top: 15px;
+}
+.burger span:last-child {
+  top: 19px;
+}
+/* !!!!!!!!! */
+/* .checkboxBurger:checked + .burger + .headerNav ul {
+  display: flex;
+}  "*/
+
+.showBurgerMenu ul {
+  display: flex;
+}
+.showBurgerMenu.headerNav {
+  display: flex;
+}
+.showBurgerMenu .buttonClose {
+  display: flex;
+}
+.buttonClose {
+  display: none;
+  width: 32px;
+}
+.headerNav li:first-child {
+  background: none;
+  position: absolute;
+  right: 19px;
+  top: 19px;
+}
+.headerNav li:nth-child(2) {
+  margin-top: 60px;
+}
+
+/* !!!!!! */
+/* .checkboxBurger:checked + .burger {
+  background-color: var(--greySeparatorColor);
+  border-radius: 8px;
+} */
+.burger.activeBurger {
+  background-color: var(--greySeparatorColor);
+  border-radius: 8px;
+}
+
+/* .checkboxBurger:checked + .burger span:first-child {
+    opacity: 0;
+  }
+  .checkboxBurger:checked + .burger span:nth-child(2) {
+    transform: rotate(45deg);
+  }
+  .checkboxBurger:checked + .burger span:nth-child(3) {
+    transform: rotate(-45deg);
+  }
+  .checkboxBurger:checked + .burger span:last-child {
+    opacity: 0;
+  } */

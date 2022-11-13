@@ -1,0 +1,61 @@
+:root {
+  --violetMainColor: #323264;
+  --violetAltColor: #46466e;
+  --violetSoftColor: #686887;
+
+  --pinkAccentColor: #f0145a;
+
+  --blueMainColor: #24a3ff;
+  --blueHoverColor: #0085ff;
+  --blueActiveColor: #006ccf;
+
+  --greyBgColor: #f5f5fa;
+  --greyBgAltColor: #ededf7;
+  --greyTextColor: #b3b3ba;
+  --greySeparatorColor: #e6e6f0;
+
+  --blackTextColor: #000000;
+  --whiteTextColor: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.62;
+  color: var(--blackTextColor);
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul li {
+  list-style: none;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.hidden {
+  display: none !important;
+}
+
+
+/* delete arrow on input type=number */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
