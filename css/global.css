@@ -48,6 +48,9 @@ p {
   display: none !important;
 }
 
+img, svg {
+  vertical-align: unset;
+}
 
 /* delete arrow on input type=number */
 input::-webkit-outer-spin-button,
@@ -59,3 +62,8 @@ input[type="number"] {
   -moz-appearance: textfield;
 }
 
+.inProgress {
+  text-align: center;
+  color: var(--violetMainColor);
+  margin: 100px 0;
+}

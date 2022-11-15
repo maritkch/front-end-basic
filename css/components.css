@@ -211,7 +211,9 @@
 }
 
 .homeLink:hover,
-.homeLink:focus {
+.homeLink:focus,
+.publicationCardTitle:hover,
+.publicationCardTitle:focus {
   color: var(--pinkAccentColor);
 }
 
@@ -219,8 +221,14 @@
 .homeLink:focus .arrow path {
   stroke: var(--pinkAccentColor);
 }
+.cardSliderHome:hover .homeLink,
+.cardSliderHome:hover .homeLink path {
+  color: var(--pinkAccentColor);
+  stroke: var(--pinkAccentColor);
+}
 
-.publication h2, .service h2 {
+.publication h2,
+.service h2 {
   margin-bottom: 30px;
 }
 
