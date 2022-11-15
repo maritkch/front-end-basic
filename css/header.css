@@ -34,12 +34,6 @@
   z-index: 2;
 }
 
-
-
-/* .fontColorWhite {
-  color: var(--whiteTextColor);
-} */
-
 .gridHeader {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -197,13 +191,6 @@ header .facebookLink {
   color: var(--blueMainColor);
   font-weight: 700;
 }
-/* .headerNav.bgDark a {
-  color: var(--whiteTextColor);
-}
-.headerNav.bgDark a:hover {
-  color: var(--pinkAccentColor);
-  border-color: var(--pinkAccentColor);
-} */
 
 .headerNav .checkedLink a {
   color: var(--pinkAccentColor);
@@ -283,15 +270,11 @@ header .facebookLink {
   margin-top: 60px;
 }
 
-/* !!!!!! */
-/* .checkboxBurger:checked + .burger {
+
+/* .burger.activeBurger {
   background-color: var(--greySeparatorColor);
   border-radius: 8px;
 } */
-.burger.activeBurger {
-  background-color: var(--greySeparatorColor);
-  border-radius: 8px;
-}
 
 /* .checkboxBurger:checked + .burger span:first-child {
     opacity: 0;

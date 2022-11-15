@@ -17,7 +17,7 @@
   --blackTextColor: #000000;
   --whiteTextColor: #ffffff;
 
-  --partner-height: 120px;
+ 
 }
 
 .hero {
@@ -86,14 +86,13 @@ header {
   align-items: center;
 }
 .experience .tab-pane {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 .fade:not(.show) {
-    opacity: auto;
-    display: none;
+  opacity: auto;
+  display: none;
 }
 
 .experience .tab-pane span {
@@ -105,33 +104,8 @@ header {
   /* margin-top: 30px; */
   font-weight: 400;
   font-size: 19px;
+  line-height: 1.5;
 }
-/* .experience {
-    display: flex;
-}
-.experienceNav {
-  border-right: 2px solid rgba(255, 255, 255, 0.3);
-  padding-right: 60px;
-  margin-right: 60px;
-}
-.experienceNav button {
-    font-size: 38px;
-    font-weight: 700;
-    color: var(--greyTextColor);
-    background: transparent;
-    border: none;
-}
-.experienceNav button:hover,
-.experienceNav button:focus {
-    color: var(--pinkAccentColor);
-}
-.experienceNav button:active {
-    background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  background-color: transparent;
-} */
 
 .btnScroll {
   position: absolute;
@@ -184,127 +158,17 @@ header {
   position: absolute;
 }
 
-.homeLink {
-  display: flex;
-  gap: 4.5px;
-  align-items: flex-start;
-
-  text-transform: uppercase;
-  color: var(--blueMainColor);
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.2;
-  letter-spacing: 1px;
-}
-
-.homeLink .arrow svg {
-  width: 100%;
-  height: 11px;
-}
-.homeLink .arrow path {
-  stroke-width: 3;
-}
-
-.homeLink:hover,
-.homeLink:focus {
-  color: var(--pinkAccentColor);
-}
-
-.homeLink:hover .arrow path,
-.homeLink:focus .arrow path {
-  stroke: var(--pinkAccentColor);
-}
-
 .cardSlideHomeTitle {
   margin-bottom: 25px;
 }
 
-.service h2,
-.publication h2 {
-    margin-bottom: 30px;
-}
-
-.partnersTitle {
-  font-size: 14px;
-  color: var(--violetMainColor);
-  text-transform: uppercase;
-  text-align: center;
-  padding-top: 60px;
-  padding-bottom: 30px;
-}
-
-.partnersWrap {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 auto;
-  max-height: calc(var(--partner-height) * 6);
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-
-.partnersWrap .partner {
-  width: 100%;
-  height: var(--partner-height);
-  padding: 10px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
-.partnersWrap .partner img {
-  max-width: 50%;
-  max-height: 100%;
-}
-
-.partnersWrap .partner.hillel {
-  background-color: #1c4280;
-}
-.partnersWrap .partner.wannaBiz {
-  background-color: #143646;
-}
-.partnersWrap .partner.tapgerine {
-  background-color: #f48b30;
-}
-.partnersWrap .partner.dlook {
-  background-color: #9e4dc3;
-}
-.partnersWrap .partner.orangear {
-  background-color: #fd9339;
-}
-.partnersWrap .partner.adtellige {
-  background-color: #e2e2e4;
-}
-.partnersWrap .partner.clickky {
-  background-color: #c71c36;
-}
-.partnersWrap .partner.ecoLeasing {
-  background-color: #dcf3f9;
-}
-.partnersWrap .partner.tapgerine {
-  background-color: #f48b30;
-}
-.partnersWrap .partner.infaTek {
-  background-color: #eaeaea;
-}
-.partnersWrap .partner.cityPack {
-  background-color: #282240;
-}
-.partnersWrap .partner.artPrint {
-  background-color: #1d4568;
-}
-.partnersWrap .partner.ultimate {
-  background-color: #000000;
-}
 
 @media screen and (min-width: 433px) {
   .cardSliderHome {
     margin-bottom: 30px;
   }
-  .partnersWrap .partner {
-    width: 50%;
-  }
 }
+
 @media screen and (min-width: 768px) {
   .hero {
     aspect-ratio: 1/1.33;
@@ -319,10 +183,8 @@ header {
   .experience .tab-pane span {
     font-size: 30px;
   }
-  .partnersWrap .partner {
-    width: 33.33%;
-  }
 }
+
 @media screen and (min-width: 992px) {
   .hero {
     aspect-ratio: initial;
@@ -331,6 +193,7 @@ header {
   }
   .experience .d-flex {
     flex-direction: row;
+    height: 320px;
   }
   .nav-link {
     font-size: 38px;
@@ -341,6 +204,8 @@ header {
     margin-right: 60px;
     flex-basis: 50%;
     align-items: flex-end;
+    justify-content: center;
+    height: max-content;
 
     border-bottom: none;
     padding-bottom: 0;
@@ -370,23 +235,14 @@ header {
     grid-row: 1/2;
   }
 
-  .partnersWrap .partner {
-    width: 25%;
-  }
 }
 
 @media screen and (min-width: 1360px) {
   .experience .nav {
     min-width: 40%;
   }
- 
 }
 
-@media screen and (min-width: 1800px) {
 
-  .partnersWrap {
-    max-width: 1720px;
-    border-radius: 12px;
-    overflow: hidden;
-  }
+@media screen and (min-width: 1920px) {
 }
